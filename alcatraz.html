@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel ="stylesheet" type ="text/css" href="css_alcatraz.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(this).on("click mouseover", function(){
+                    $(this).find("audio")[0].play();
+                });
+                $("#flowers").click(function(){
+                    $("#photo_target").html('<img src ="images-2.jpeg">');
+                });
+            });
+        </script>
+    <title>Alcatraz Gardens</title>
+</head>
+<body>
+    <div id ="container">
+        <div id ="header1">
+            <h1>Alcatraz Gardens</h1>
+        </div>
+        <div id ="header2">
+            <h4>Come plant yourself in history !</h4>
+        </div>
+        <img id ="main_img" img src ="Alcatraz-Island-San-Francisco-Bay-California.jpg" alt ="main image">
+        <audio id ="birds" audio src ="0267.wav"></audio>
+        <div id ="sub_content">
+            <h2>About the Gardens...</h2>
+            <div id ="garden_pic">
+                <img id ="garden_pic" img src ="alcatraz2.jpg" alt ="garden pic">
+            </div>
+            <div id ="about">
+                <p>For more than a century, gardens were an important part of everyday life for officers, families, and
+                    prisoners confined to Alcatraz by sentence or duty. Many of the plants selected by these unheralded
+                    gardeners proved to be excellent choices for the harsh and barren environment, flourishing through
+                    the four decades of neglect that followed the prison’s closing.
+                </p>
+                <a href="https://www.alcatrazgardens.org">Learn more...</a>
+            </div>
+            <h4>WORDS FROM THE PAST...</h4>
+                <div>
+                    <p>"The hillside provided a refuge from disturbances of the prison, the work a release, and it became 
+                        an obsession. This one thing I would do well…If we are all our own jailers, and prisoners of our 
+                        traits, then I am grateful for my introduction to the spade and trowel, the seed and the spray can.
+                        They have given me a lasting interest in creativity."
+                    </p>
+                </div>
+                <h5>Elliott Michener, #578AZ</h5>
+        </div>
+        <div id ="main_content">
+            <div id ="photo_target"></div>
+            <button id ="flowers">Click here to see whats growing</button>
+        </div>
+        <div id ="footer">
+            <a href ="https://www.google.com">Home</a>
+            <a href ="https://www.google.com">About</a>
+            <a href ="https://www.google.com">Projects</a>
+            <a href ="https://www.google.com">Volunteer</a>
+            <a href ="https://www.google.com">Contact us</a>
+        </div>
+    </div>
+</body>
+</html>
